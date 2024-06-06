@@ -34,6 +34,6 @@ if (numero & 2 == 0) and (numero & 4 == 0):
 elif numero % 2 == 0:
      print(f"O número {numero} é par e não é divisível por 4")
 else:
-     print(f"O número {numero} é impar")
+     print(f"O número {numero} é impar ")
 
 # %%
