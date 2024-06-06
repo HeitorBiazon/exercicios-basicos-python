@@ -32,6 +32,8 @@ numero = int(input("Digite um número: "))
 if (numero & 2 == 0) and (numero & 4 == 0):
      print(f"O número {numero} é par e é divisível por 4.")
 elif numero % 2 == 0:
-     print(f"O número {numero} é par")
+     print(f"O número {numero} é par e não é divisível por 4")
 else:
      print(f"O número {numero} é impar")
+
+# %%
