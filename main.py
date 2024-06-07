@@ -32,6 +32,36 @@ numero = int(input("Digite um número: "))
 if (numero & 2 == 0) and (numero & 4 == 0):
      print(f"O número {numero} é par e é divisível por 4.")
 elif numero % 2 == 0:
-     print(f"O número {numero} é par")
+     print(f"O número {numero} é par e não é divisível por 4")
 else:
-     print(f"O número {numero} é impar")
+     print(f"O número {numero} é impar ")
+
+# %%
+'''Take a list, say for example this one:
+
+  a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
+and write a program that prints out all the elements of the list that are less than 5.
+
+Extras:
+
+Instead of printing the elements one by one, make a new list that has all the elements less than 5 from this list in it and print out this new list.
+Write this in one line of Python.
+Ask the user for a number and return a list that contains only elements from the original list a that are smaller than that number given by the user.'''
+
+## Exibir elementos da lista1 que são menores que 5
+lista1 = [4, 22, 1, 3, 9, 7, 11, 12, 2, 27, 2, 15]
+nova_lista = []
+
+for i in lista1:
+     if i < 5:
+          nova_lista.append(i)
+print(nova_lista)
+
+## Exibir elementos da lista1 que são menores que o número que foi pedido ao usuário e que está armazenado na variável numero
+numero = int(input("Digite um número: "))
+lista2 = []
+for i in lista1:
+     if i < numero:
+          lista2.append(i)
+print(lista2)
+# %%
