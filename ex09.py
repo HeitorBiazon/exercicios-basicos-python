@@ -6,20 +6,20 @@ import random
 
 contador = 0
 num = random.randrange(0, 2)
-num_usuario = int(input("Digite um número inteiro: "))
 
-if num_usuario == num:
-     jogo = input("Você acertou")
-elif num_usuario > num:
-     contador += 1
-     print("Número maior do que o valor correto.")
-else:
-     contador += 1
-     print("Número menor do que o valor correto.")
+while True:
+     num_usuario = int(input("Digite um número inteiro para tentar advinhar: "))
+     contador +=1
+     if num_usuario == num:
+          jogo = input(f"Você acertou em {contador} tentativas. Aperte qualquer tecla para prosseguir. ")
+     elif num_usuario > num:
+          print("Número maior do que o valor correto. ")
+     else:
+          print("Número menor do que o valor correto. ")
 
-continuar = input("Digite 'sair' para parar o jogo").lower()
+     continuar = input("Aperte qualquer tecla para continuar ou digite 'sair' para encerrar o jogo. ").lower()
 
-if continuar == "sair":
-     print(f"Você levou {contador} tentativas para acertar")
-     
+     if continuar == "sair":
+          print(f"Jogo encerrado.")
+          break
      
