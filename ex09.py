@@ -5,7 +5,7 @@ Keep track of how many guesses the user has taken, and when the game ends, print
 import random
 
 contador = 0
-num = random.randrange(0, 2)
+num = random.randrange(0, )
 
 while True:
      num_usuario = int(input("Digite um número inteiro para tentar advinhar: "))
